@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 10px 50px;
+    background-color: rgb(26, 71, 84);
+}
+
+.logo {
+    font-size: 1.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Cinzel Decorative", cursive;
+    color: white;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: white;
+    padding: 10px 6px;
+    margin: 0px 8px;
+    font-family: "Oswald", sans-serif;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+nav :hover {
+    color: gray;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main {
+    padding: 100px 130px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.home {
+    color: black ;
+    margin-left: -30px;
+}
+
+.home h1 {
+    font-family: "Eagle Lake", sans-serif;
+    font-size: 224%;
+}
+
+.home div p {
+    padding-top: 2em;
+    width: 35%;
+    font-size: larger;
+    font-family: "Merienda One", cursive;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container-1 {
+    padding: 100px 130px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    opacity: 1.5;
+    /* filter: drop-shadow(2px 4px 6px black); */
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    padding: 35px 50px 25px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+.about h1 {
+    font-size: 30px;
+    margin: -10px 0px 10px;
+}
+
+.about article {
+    margin: 15px 0px;
+    line-height: 37px;
+    word-spacing: 4px;
+    font-size: 28px;
+    overflow: hidden scroll;
+    font-family: "Cinzel", serif;
+}
+
+.about article::-webkit-scrollbar {
+    width: 6px;
+}
+
+.about article::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px white;
+    border-radius: 3px;
+}
+
+.about article::-webkit-scrollbar-thumb {
+    background: rgb(179, 169, 169);
+    border-radius: 3px;
+}
+
+.about article::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container-2 {
+    padding: 100px 130px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.dragons {
+    transform: translateY(30px);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+}
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box div{
+    color: white;
+}
+
+.box div p {
+    margin: 0px 20px;
+    line-height: 25px;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+}
+
+.box div h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: "Cinzel Decorative", cursive;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px white;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(61, 59, 59);
+    /* border-radius: 3px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+}
